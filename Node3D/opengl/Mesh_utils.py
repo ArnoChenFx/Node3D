@@ -9,9 +9,6 @@ from OpenGL.GL import *
 from ..vendor.pyqtgraph import functions as fn
 import copy
 
-'''
-
-'''
 @numba.jit(nopython=True, cache=True, nogil=True)  # parallel=True, nogil=True
 def _calVertexSmooth(data, iter, vv):
     for i in range(iter):
